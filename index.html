@@ -1,150 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Samarth Garg | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Samarth Garg</h1>
-    <p>Aspiring Software Development Engineer | C++ • Python • Data Structures & Algorithmns</p>
+
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="nav-inner container">
+
+      <a class="brand" href="#">Samarth Garg</a>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" title="Toggle dark mode">🌙</button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-left">
+        <h1 class="hero-title">Hi, I'm <span>Samarth Garg</span></h1>
+
+        <p class="hero-sub">
+          Aspiring Software Development Engineer • C++ • Python • Data Science
+        </p>
+
+        <p class="hero-animate">
+          I build <span id="rotatingText">data-driven apps</span> for real-world problems.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="/CV/CV_Final.pdf" target="_blank">Download CV</a>
+        </div>
+
+        <div class="hero-meta">
+          <span>📍 Ghaziabad, UP</span>
+          <span>
+            ✉️ <a href="mailto:samarthgarg14@gmail.com">samarthgarg14@gmail.com</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card-profile">
+          <img src="profile.jpeg" class="avatar-img" alt="Profile Image">
+          <h3>Samarth Garg</h3>
+          <p>Third-year CSE • B.Tech • Lovely Professional University</p>
+
+          <div class="skill-chips">
+            <span>C++</span>
+            <span>Python</span>
+            <span>Data Science</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </header>
 
-  <!-- ABOUT SECTION -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am an aspiring Software Development Engineer with strong foundations in C++, Java, Python, Data Structures,
-      and object-oriented design. I enjoy building data-driven applications, APIs, analytics dashboards,
-      and real-time web applications. I have hands-on experience developing complete end-to-end projects
-      such as Sleep Detox Optimizer and large-scale COVID-19 Data Analysis systems. I am passionate about
-      designing scalable, high-impact solutions that solve real-world problems and enhance user experience.
-    </p>
-  </section>
+  <!-- MAIN CONTENT -->
+  <main>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> C++, Python</li>
-      <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Responsive UI, Flask</li>
-      <li><strong>Data Analysis:</strong> Pandas, NumPy, Matplotlib, Seaborn, Excel Dashboards</li>
-      <li><strong>Software Engineering:</strong> OOP, Data Structures & Algorithms, SDLC</li>
-      <li><strong>Tools:</strong> Git, GitHub, MS(Excel, PowerPoint, Word)</li>
-      <li><strong>Additional Skills:</strong> Communication, Teamwork, Leadership, Problem-solving</li>
-    </ul>
-  </section>
+    <!-- ABOUT -->
+    <section id="about" class="container section">
+      <h2>About Me</h2>
+      <p class="lead">
+        I am an aspiring Software Development Engineer with strong foundations in C++, Java, Python, Data Structures,
+        and object-oriented design. I specialize in building data-driven applications, APIs, and analytics dashboards.
+        I enjoy solving complex problems and designing scalable solutions that create real impact.</p>
+    </section>
 
-  <!-- ACHIEVEMENTS SECTION -->
-<section id="achievements">
-  <h2>Achievements</h2>
-  <ul>
-    <li><strong>8.62 CGPA</strong> in B.Tech Computer Science & Engineering at Lovely Professional University.</li>
-    <li>Successfully earned the <strong>NPTEL Cloud Computing Certification</strong> from IIT Kharagpur.</li>
-    <li>Completed multiple <strong>end-to-end deployed projects</strong> including AI-based web apps and data analytics dashboards.</li>
-    <li>Demonstrated strong <strong>analytical and development capabilities</strong> through academic work, personal projects, and self-driven learning.</li>
-  </ul>
-</section>
+    <!-- SKILLS -->
+    <section id="skills" class="container section">
+      <h2>Skills</h2>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>COVID-19 Data Analysis (Python, Pandas, Matplotlib)</strong><br>
-        Performed data cleaning, visualization, and trend analysis on large ZIP-level datasets.
-        Built analytical dashboards and extracted actionable insights.<br>
-        🔗 <a href="https://github.com/Samarthgarg14/covid-data-analysis" target="_blank">
-          GitHub Repository
-        </a>
-      </li>
+      <div class="skills-grid">
 
-      <li>
-        <strong>Sleep Detox Optimizer (Flask, Python, Gemini API)</strong><br>
-        Built a real-time AI-based sleep optimization tool with responsive UI and deployment on Render.<br>
-        🌐 <a href="https://sleep-detox-optimizer.onrender.com/" target="_blank">Live Demo</a> |
-        🔗 <a href="https://github.com/Samarthgarg14/Sleep-Detox-Optimizer" target="_blank">
-          GitHub Repository
-        </a>
-      </li>
+        <div class="skill-card glass">
+          <h3>Programming</h3>
+          <p>C++, Python, JavaScript</p>
+        </div>
 
-      <li>
-        <strong>Portfolio Website (HTML, CSS, JavaScript)</strong><br>
-        Designed and developed this personal portfolio to present my skills, projects, and achievements.
-      </li>
-    </ul>
-  </section>
+        <div class="skill-card glass">
+          <h3>Web Technologies</h3>
+          <p>HTML, CSS, JavaScript, Responsive UI, Flask</p>
+        </div>
 
-  <!-- EDUCATION SECTION -->
-  <section id="education">
-  <h2>Education</h2>
-  <ul>
+        <div class="skill-card glass">
+          <h3>Tools & Technologies</h3>
+          <p>Git, GitHub, Excel, PowerPoint, Word</p>
+        </div>
 
-    <li class="edu-item">
-      <div class="edu-header">
-        <strong>Lovely Professional University</strong>
-        <span class="edu-duration">(2023–Present)</span>
+        <div class="skill-card glass">
+          <h3>Data Analysis</h3>
+          <p>Pandas, NumPy, Matplotlib, Seaborn, Excel Dashboards</p>
+        </div>
+
       </div>
-      B.Tech in Computer Science & Engineering — CGPA: 8.62 <br>
-      Phagwara, Punjab
-    </li>
+    </section>
 
-    <li class="edu-item">
-      <div class="edu-header">
-        <strong>Bharat National Public School</strong>
-        <span class="edu-duration">(2021–2023)</span>
+    <!-- PROJECTS -->
+    <section id="projects" class="container section">
+      <h2>Projects</h2>
+
+      <div class="cards-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card glass">
+          <h3>AI Sleep Detox Optimizer</h3>
+          <p><b>Tech:</b> Python, Flask, Gemini API</p>
+          <p>
+            AI-powered Sleep Detox Optimizer that uses wearable and lifestyle data to evaluate sleep risks and deliver
+            personalized detox suggestions. Built with Flask and Gemini API, featuring a responsive UI and deployed on
+            Render.
+          </p>
+
+          <div class="project-links">
+            <p>
+              <img src="https://cdn-icons-png.flaticon.com/512/709/709586.png" width="16">
+              <a href="https://sleep-detox-optimizer.onrender.com/" target="_blank">Live</a>
+            </p>
+
+            <p>
+              <img src="https://cdn-icons-png.flaticon.com/512/709/709586.png" width="16">
+              <a href="https://github.com/Samarthgarg14/Sleep-Detox-Optimizer" target="_blank">Repository</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass">
+          <h3>COVID-19 Data Analysis (Python)</h3>
+          <p><b>Tech:</b> Python, Pandas, NumPy, Matplotlib</p>
+          <p>
+            A Python-based data analysis project involving data cleaning, preprocessing, visualization, and statistical
+            insights using Pandas, NumPy, and Matplotlib/Seaborn to explore patterns, trends, and relationships in the
+            dataset.
+          </p>
+
+          <div class="project-links">
+            <p>
+              <img src="https://cdn-icons-png.flaticon.com/512/709/709586.png" width="16">
+              <a href="https://github.com/Samarthgarg14/covid-data-analysis" target="_blank">Repository</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass">
+          <h3>Lok Sabha Elections 2024 Dashboard</h3>
+          <p><b>Tech: </b>Microsoft Excel 2025</p>
+          <p>
+            Developed an interactive Excel dashboard analyzing 2024 election results
+            with KPIs, vote share trends, constituency filters, and visual insights.
+          </p>
+
+          <div class="project-links">
+            <p>
+              <img src="https://cdn-icons-png.flaticon.com/512/709/709586.png" width="16">
+              <a href="https://github.com/Samarthgarg14/Lok-Sabha-Election-2024-Excel-Dashboard"
+                target="_blank">Repository</a>
+            </p>
+          </div>
+        </article>
+
       </div>
-      Class 12 — 77.60% <br>
-      Delhi
-    </li>
+    </section>
 
-    <li class="edu-item">
-      <div class="edu-header">
-        <strong>Happy English School</strong>
-        <span class="edu-duration">(2008–2021)</span>
+    <!-- EDUCATION -->
+    <section id="education" class="container section">
+      <h2>Education</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <strong>Lovely Professional University</strong>
+            <div class="meta">B.Tech CSE — CGPA: 8.62</div>
+          </div>
+          <div class="timeline-right">
+            <span class="edu-duration">(2023–Present)</span>
+            <div class="location">Phagwara, Punjab</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <strong>Bharat National Public School</strong>
+            <div class="meta">Class 12 — 77.60%</div>
+          </div>
+          <div class="timeline-right">
+            <span class="edu-duration">(2022–2023)</span>
+            <div class="location">Delhi</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <strong>Happy English School</strong>
+            <div class="meta">Class 10 — 94.20%</div>
+          </div>
+          <div class="timeline-right">
+            <span class="edu-duration">(2020–2021)</span>
+            <div class="location">Delhi</div>
+          </div>
+        </div>
+
       </div>
-      Class 10 — 94.20% <br>
-      Delhi
-    </li>
+    </section>
 
-  </ul>
-</section>
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="container section">
+      <h2>Achievements</h2>
 
-  <!-- CERTIFICATIONS SECTION -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Cloud Computing — NPTEL, IIT Kharagpur (April 2025)</li>
-    </ul>
-  </section>
+      <div class="cards-grid">
 
-  <!-- CONTACT SECTION -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> samarthgarg14@gmail.com</p>
-    <p><strong>Phone:</strong> +91 9650984465</p>
-    <p><strong>GitHub:</strong>
-      <a href="https://github.com/Samarthgarg14" target="_blank">github.com/Samarthgarg14</a>
-    </p>
-    <p><strong>LinkedIn:</strong>
-      <a href="https://www.linkedin.com/in/samarth-garg-997235240/" target="_blank">
-        linkedin.com/in/samarth-garg-997235240
-      </a>
-    </p>
-    <p><strong>Location:</strong> Ghaziabad, Uttar Pradesh</p>
-  </section>
+        <div class="glass achievement-card">
+          <h4>Dean's List (Top 10%)</h4>
+          <p>B.Tech Computer Science & Engineering (CGPA: 8.62)</p>
+        </div>
 
-  <footer>
-    <p>© 2025 Samarth Garg</p>
+        <div class="glass achievement-card">
+          <h4>Deployed Projects</h4>
+          <p>Completed Multiple End-to-End Deployed Projects
+            (AI tools, Python analytics, dashboards)</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="container section">
+      <h2>Certifications</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <strong>NPTEL — Cloud Computing</strong>
+            <div class="meta">Completed from IIT Kharagpur</div>
+          </div>
+          <div class="timeline-right">
+            <span class="edu-duration">(April 2025)</span>
+            <div class="location">
+              <a href="certificates/nptel_cloud.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <strong>AlgoTutors — AI Powered NLP Course</strong>
+            <div class="meta">Advanced NLP Hands-on Training</div>
+          </div>
+          <div class="timeline-right">
+            <span class="edu-duration">(August 2025)</span>
+            <div class="location">
+              <a href="certificates/algotutors_nlp.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <p class="lead">Let's connect — I'm actively seeking internships and collaborations.</p>
+
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email:</strong> <a href="mailto:samarthgarg14@gmail.com">samarthgarg14@gmail.com</a></p>
+          <p><strong>Phone:</strong> +91 9650984465</p>
+          <p><strong>Location:</strong> Ghaziabad, Uttar Pradesh</p>
+        </div>
+
+        <div>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/samarth-garg-997235240/"
+              target="_blank">linkedin.com/in/samarth-garg-997235240</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/Samarthgarg14"
+              target="_blank">github.com/Samarthgarg14</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Samarth Garg • Built with &hearts;</p>
+    </div>
   </footer>
 
-  <!-- Scroll to Top Button -->
+  <!-- FLOATING SOCIALS -->
+  <div class="socials">
+    <a href="https://github.com/Samarthgarg14" target="_blank" title="GitHub">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="icon" alt="GitHub">
+    </a>
+
+    <a href="https://www.linkedin.com/in/samarth-garg-997235240/" target="_blank" title="LinkedIn">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="icon" alt="LinkedIn">
+    </a>
+  </div>
+
+  <!-- SCROLL TOP -->
   <button id="topBtn" title="Go to top">↑</button>
 
-  <!-- JS Script -->
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
+
 </html>
